@@ -49,3 +49,29 @@ To set up and run the Electron Countdown App, follow these steps:
 ## License
 
 This project is licensed under the MIT License.
+[## Compilar para Windows
+
+Para generar un ejecutable (.exe) de la aplicación en Windows:
+
+1. Instala electron-packager:
+   ```powershell
+   npm install --save-dev electron-packager
+   ```
+2. Compila el proyecto ejecutando:
+   ```powershell
+   npx electron-packager . Temporizador --platform=win32 --arch=x64 --out=dist --overwrite
+   ```
+
+Esto creará la carpeta `dist/Temporizador-win32-x64` con el ejecutable listo para usar en Windows.
+
+Puedes agregar un script en `package.json` para compilar fácilmente:
+```json
+"scripts": {
+  "start": "electron .",
+  "build-win": "electron-packager . Temporizador --platform=win32 --arch=x64 --out=dist --overwrite"
+}
+```
+Luego ejecuta:
+```powershell
+npm run build-win
+```

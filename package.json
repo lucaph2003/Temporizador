@@ -1,0 +1,15 @@
+{
+  "name": "electron-countdown-app",
+  "version": "1.0.0",
+  "description": "A simple Electron application that allows users to set a countdown timer and plays a sound when the time is up.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^38.1.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
